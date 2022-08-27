@@ -1,0 +1,19 @@
+
+/*metro-animations*/
+@import "./app/css-animations/animaations.css";
+@import "./assets/reset/reset.css";
+@import "./assets/media/fonts.css";
+@import "./assets/fontAwesome/css/all.min.css";
+@import "./app/Global/textarea.css";
+@import "./app/Global/scrollBar.css";
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: transparent;
+  background-image: linear-gradient(to right,
+  #8c00f7,
+  #9360b6,
+  #5d38a7,
+  #472cc4);
+}

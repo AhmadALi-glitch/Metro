@@ -1,0 +1,14 @@
+
+<div class="container">
+    
+    <div class="add-comment">
+        <app-comment-form [id]="postId"></app-comment-form>
+    </div>
+
+    <div class="comments">
+        <div class="comment" *ngFor="let comment of comments">
+            <app-comment [comment]="comment"></app-comment>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,25 @@
+<nav [class.fullnav]="showNav">
+    <div class="link home"><i routerLink="/home">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="-4 -1 30 30" width="18" height="18">
+                <path
+                    d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z" />
+            </svg>
+        </i></div>
+    <div class="link follow"><i routerLink="/explore">
+            <svg id="Layer_1" viewBox="-3 -3 28 28" data-name="Layer 1">
+                <path
+                    d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10zm5-10a1 1 0 0 1 -1 1h-3v3a1 1 0 0 1 -2 0v-3h-3a1 1 0 0 1 0-2h3v-3a1 1 0 0 1 2 0v3h3a1 1 0 0 1 1 1z" />
+            </svg>
+        </i></div>
+    <div class="link user"><i routerLink="/me">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 -1 24 24" width="20" height="20">
+                <path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z" />
+                <path
+                    d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z" />
+            </svg>
+        </i></div>
+    
+</nav>
+<div class="ext">
+    <i (click)="toggleNav(arrow)" #arrow class="fa fa-arrow-alt-circle-right"></i>
+</div>

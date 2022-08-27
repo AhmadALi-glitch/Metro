@@ -1,0 +1,49 @@
+/*MAIN CONTAINER----------------------------*/
+.errors .container{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all ease 1s;
+    width:55%;
+    background-color:rgba(255, 255, 255, 0.5);
+    padding:4px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/*SECOND CONTAINER--------------------------*/
+.errors{
+    width:100%;
+    position:fixed;
+    top:0px;
+    right:0px;
+    
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    transition: all ease 1s;
+
+}
+
+/*ERROR STYLE*/
+.error {
+    width:100%;
+    background-image: linear-gradient(to right,
+    #8c00f7,
+    #9360b6,
+    #5d38a7,
+    #472cc4);
+    animation: down ease-in-out .3s;
+    border-radius:10px;
+    position: relative;
+    color:transparent;
+    background-clip: text;
+    font-family:main;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    z-index: 100;
+}
+
+@media(max-width:400px) {
+    .error {
+        font-size: 12px; 
+    } 
+}

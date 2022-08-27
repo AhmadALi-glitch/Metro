@@ -1,0 +1,26 @@
+<div class="container">
+    
+    <div class="photo">
+
+        <label for="photo">
+            <i class="far fa-edit"></i>
+        </label>
+        <input 
+        id="photo"
+        type="file"
+        name="image"
+        ng2FileSelect
+        [uploader]="uploader"
+        accept="image/x-png,image/gif,image/jpeg">
+
+    </div>
+
+    <button
+    class="reseted"
+      *ngIf="uploader.getNotUploadedItems().length"
+      (click)="uploader.uploadAll()"
+    >
+      Add
+    </button>
+    
+</div>

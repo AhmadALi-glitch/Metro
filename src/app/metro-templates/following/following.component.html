@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div class="card" *ngFor="let person of following" (click)="toHisPage(person.email)">
+        <div class="info" >
+
+            <div *ngIf="person.image" class="image">
+                <img *ngIf="person.image" alt="." [src]=" URL + person.image">
+            </div>
+
+            <div class="name">
+                <p>{{ person.name}}</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="noFollowing" *ngIf="!following.length">
+        Has No Following Yet !
+    </div>
+
+</div>

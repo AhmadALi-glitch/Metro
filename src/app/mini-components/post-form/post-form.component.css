@@ -1,0 +1,70 @@
+
+@import "../../css-animations/animaations.css";
+@import "../../mini-css-files/uploadimage.css";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    position: relative;
+    height:60%;
+}
+
+.text {
+    width:100%;
+    border:white 3px dotted;
+    padding:5px;
+}
+
+i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+textarea {
+    width:100%;
+    background:rgba(236, 235, 235, 0.482);
+    line-height: 30px;
+    word-wrap: break-word;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    font-family:para;
+}
+
+.media {
+    position: absolute;
+    top:-50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fullbox{
+    transform: scale(1);
+}
+
+.post {
+    position:absolute;
+    left:-20%;
+    transform: rotate(-90deg);
+    cursor:pointer;
+    stroke-width: 2px;
+    stroke:beige;
+    -webkit-text-stroke: 1px #fff;
+}
+@media(max-height:650px) {
+    textarea{
+        height:250px
+    }
+}
+
+@media(max-height:450px) {
+    textarea{
+        height:150px
+    }
+}

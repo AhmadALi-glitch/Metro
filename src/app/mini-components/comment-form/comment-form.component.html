@@ -1,0 +1,13 @@
+
+<div class="container">
+    <textarea 
+    [(ngModel)]="commentText"
+    placeholder="write your comment here.." 
+    type="text" 
+    class="reseted"
+    >
+    </textarea>
+    <button *ngIf="commentText.length > 0" (click)="sendComment()">
+        Add
+    </button>
+</div>

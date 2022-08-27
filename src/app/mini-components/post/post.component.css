@@ -1,0 +1,122 @@
+@import "../../../assets/media/fonts.css";
+@import "../../css-animations/animaations.css";
+
+.post {
+    width:80%;
+    margin:1px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow:1px 1px 15px rgba(14, 14, 14, 0.388);
+    font-family:main;
+    animation: created 1s ease 1;
+    gap:20px;
+    position: relative;
+}
+
+.comments-button i{
+    cursor: pointer;
+}
+
+.info{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px white dashed;
+}
+
+.author {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.date{
+    font-size: 18px;
+}
+
+.post > * {
+    width:51%;
+    text-align: center;
+    margin:10px;
+}
+
+.post .edit > *{
+    display:inline
+}
+
+.edit .delete {
+    float: right;
+    cursor:pointer;
+}
+
+.edit .update {
+    float: left;
+}
+
+.post .text {
+    font-family:para;
+    width:50%;
+    text-align: center;
+    line-height: 30px;
+    padding:4px;
+    word-wrap: break-word;
+    white-space: wrap;
+
+}
+
+.post .media {
+    width:50%;
+}
+
+.post .media img {
+    width:100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.comments-box {
+    height:0;
+    transition: all ease .4s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.showComments {
+    opacity: 1;
+    height:100%;
+    transform: scale(1);
+}
+
+
+@media(max-width:500px) {
+    .post{
+        width:100%;
+    }
+    .post .text {
+        width:100%;
+        text-align: left;
+        line-height: 20px;
+    }
+
+    .author{
+        font-size:14px;
+    }
+}
+
+@media(max-width:900px) {
+    .date {
+        font-size:14px;
+    }
+}
+
+@media(max-width:470px) {
+    .info{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    .author{
+        width:51%;
+    }
+}

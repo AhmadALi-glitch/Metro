@@ -1,0 +1,27 @@
+
+.upload-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    background-color:rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding:10px;
+    display:flex;
+    justify-content: center;
+}
+
+.photo input {
+    display: none;
+}
+
+.photo label {
+    cursor: pointer;
+}
+
+i {
+    text-align: center;
+}
+

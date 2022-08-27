@@ -1,0 +1,26 @@
+
+
+<div class="group">
+
+    <app-search-box *ngIf="switchCase == 'global' " class="search-box" (onWrite)="filter($event)"></app-search-box>
+
+    <div class="card" *ngFor="let person of people()">
+
+        <div class="info" *ngIf="person.email != myEmail">
+
+            <div *ngIf="person.image"  (click)="toHisPage(person.email)" class="image">
+                <img *ngIf="person.image.length > 1"  [src]=" URL + person.image">
+            </div>
+
+            <div  class="name" *ngIf="person.email != myEmail">
+                <p (click)="toHisPage(person.email)">{{ person.name }}</p>
+            </div>
+
+        </div>
+
+        <div class="follow-button" *ngIf="person.email != myEmail">
+            <app-follow [p2]="person.email"></app-follow>
+        </div>
+
+    </div>
+</div>

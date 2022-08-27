@@ -1,0 +1,31 @@
+
+<div class="post">
+
+    <div>
+        <div class="info">
+            <div class="author" (click)="toHisPage(postInfo.email)">{{ postInfo.author }}</div>
+            <div class="date">{{ postInfo.date }}</div>
+        </div>
+
+    
+        <div class="edit" *ngIf="isEditAuth">
+            <div class="delete">
+                <i class="fa fa-cut" (click)="deletePost(postInfo.postId)"></i>
+            </div>
+        </div>
+    
+        <div class="text">
+            {{ postInfo.paragraph }}
+        </div>
+    
+    </div>
+    
+    <div class="comments-button">
+        <i (click)="toggleCommentsBox()" class="far fa-comment-dots"></i>
+    </div>
+
+    <div [ngClass]="{'showComments' : commentsBoxState}" class="comments-box">
+        <app-comments [id]="postInfo.postId"></app-comments>
+    </div>
+
+</div>

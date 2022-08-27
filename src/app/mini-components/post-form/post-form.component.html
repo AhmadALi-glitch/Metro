@@ -1,0 +1,12 @@
+<div class="container" [formGroup]="postForm">
+
+        <div class="text">
+            <textarea formControlName="paragraph" placeholder="Write Somthing..." cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="post"
+        *ngIf="postForm.valid"
+        
+        (click)="sendPost()">post it!</div>
+
+</div>

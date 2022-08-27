@@ -1,0 +1,31 @@
+
+/*IMPORTS----------------------------------------*/
+@import "../../css-animations/animaations.css";
+@import "../../mini-css-files/form/credintalsForm.css";
+@import "../../mini-css-files/form/infoForm.css";
+@import "../../mini-css-files/form/loginErrors.css";
+
+/*FORM STYLE-------------------------------------*/
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    background-color: transparent;
+}
+
+/*FORM EFFECTS-----------------------------------*/
+
+form {
+    transition:all ease 1s;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+}
+
+.login{
+    position: fixed;
+    bottom: -50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}

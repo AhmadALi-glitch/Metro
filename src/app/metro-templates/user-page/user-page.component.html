@@ -1,0 +1,14 @@
+
+<div class="container">
+    <div class="header">
+        <metro-header></metro-header>
+    </div>
+    <div class="profile">
+        <metro-profile [update]="updateUsersInfo" [about]="userInfo.about" [photoPath]="URL + userInfo.photoPath" [name]="userInfo.name" [email]="userInfo.email"></metro-profile>
+    </div>
+
+    <div class="follow">
+        <app-follow [p2]="userInfo.email" [followState]="followState"></app-follow>
+    </div>
+
+</div>

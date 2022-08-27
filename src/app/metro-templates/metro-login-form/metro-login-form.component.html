@@ -1,0 +1,40 @@
+
+<form [formGroup]="loginForm">
+
+    <div class="credintals" formGroupName="cridentials">
+
+        <label for="name">E-Mail</label>
+        <input id="name" type="text"
+        #_name (keyup)="animateString(_name)"
+        formControlName="email"
+        class="reseted" 
+        >
+        
+        <label for="password">Password</label>
+        <input id="password" type="text" 
+        #_password (keyup)="animateString(_password)"
+        formControlName="password"
+        class="reseted" 
+        >
+
+
+        <div class="button-container">
+            <div *ngIf="loginForm.pending" class="pending">wait..</div>
+            <button *ngIf="!loginForm.pending" (click)="sendUserData()" [disabled]='notUniqueEmail'>continue</button>
+        </div>
+
+        <div (click)="toSignMode()" class="login">iam A new User</div>
+
+    </div>
+    
+</form>
+
+<div class="errors">
+    <div class="container">
+        <h2 class="error" *ngIf="notUniqueEmail && email?.touched">your Email Is Not Here</h2>
+        <h2 class="error" *ngIf="emptyEmail">E-Mail Is Required</h2>
+        <h2 class="error" *ngIf="notValidEmail">not a valid email !</h2>
+        <h2 class="error" *ngIf="emptyPassword">Password Is Required</h2>
+        <h2 class="error" *ngIf="loginForm?.errors?.['tryAgain']">try Again Please !</h2>
+    </div>
+</div>

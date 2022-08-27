@@ -1,0 +1,12 @@
+
+<div class="container" #box>
+
+    <div #post class="post-form" *ngIf="isFullBox">
+        <post-form></post-form>
+    </div>
+
+</div>
+
+<div class="icon">
+    <i class="fa" [ngClass]="{'fa-arrow-down' : isFullBox, 'fa-plus' : !isFullBox}" (click)="toggleFullBox(box)"></i>
+</div>

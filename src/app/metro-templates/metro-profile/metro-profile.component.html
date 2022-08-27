@@ -1,0 +1,33 @@
+
+<div class="container">
+
+    <div class="logout" *ngIf="isEditAuth">
+        <app-logout></app-logout>
+    </div>
+
+    <div class="credits">
+        <app-credits [name]="name" [email]="email" [about]="about" [photoPath]="photoPath"></app-credits>
+    </div>
+
+
+    <div class="switchers">
+        <button (click)="showPosts()">posts</button>
+        <button (click)="showFollowing()" >Following</button>
+    </div>
+
+
+    <div class="user_posts" *ngIf="pVf == 'posts' ">
+        <user-posts [email]="email" ></user-posts>
+    </div>
+
+        <div class="user-iFollow" *ngIf="pVf == 'following' ">
+            <app-following (onRefresh)=" pVf='' " [email]="email"></app-following>
+        </div>
+    
+        <div class="create_post" *ngIf="isEditAuth">
+            <create-post></create-post>
+        </div>
+
+
+
+</div>

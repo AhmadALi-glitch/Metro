@@ -1,0 +1,10 @@
+
+button {
+    color:white;
+    background-color: transparent;
+    border: solid white 2px;
+    outline: none;
+    font-family:main;
+    padding: 10px;
+    cursor: pointer;
+}

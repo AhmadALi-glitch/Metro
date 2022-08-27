@@ -1,0 +1,16 @@
+
+<div class="header">
+    <metro-header></metro-header>
+</div>
+
+<div class="container">
+
+    <div class="switchbar-bar">
+        <h3 class="switcher" (click)="switchCase = 'country' " >country</h3>
+        <h3 class="switcher" (click)="switchCase = 'following' " >following</h3>
+        <h3 class="switcher" (click)="switchCase = 'global' " >global</h3>
+    </div>
+
+    <app-filtered-people [switchCase]="switchCase"></app-filtered-people>
+
+</div>

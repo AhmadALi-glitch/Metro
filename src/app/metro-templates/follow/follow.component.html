@@ -1,0 +1,11 @@
+
+<div class="container">
+
+    <button 
+    [class.fixed]="fState == 'done'">
+    <span (click)="follow()" *ngIf="!followState">Follow</span>
+    <span (click)="unFollow()" *ngIf="followState">Unfollow</span>
+    </button>
+    
+
+</div>

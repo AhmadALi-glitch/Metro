@@ -1,0 +1,10 @@
+
+<div class="container">
+    <i *ngIf="isMyComment" class="fa fa-trash" (click)="deleteComment(comment.commentId)"></i>
+    <div class="author" (click)="goToHisPage(comment.authorEmail)">
+        {{comment.authorName}}
+    </div>
+    <div class="text">
+        {{comment.text}}
+    </div>
+</div>

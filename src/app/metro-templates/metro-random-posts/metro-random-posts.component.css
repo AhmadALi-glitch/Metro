@@ -1,0 +1,21 @@
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:30px;
+    backdrop-filter: blur(5px);
+}
+
+.container .post {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+app-post {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}

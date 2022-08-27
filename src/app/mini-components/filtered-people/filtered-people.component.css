@@ -1,0 +1,90 @@
+
+
+.container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding:10px;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    width:100%;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    width:100%;
+}
+
+.card {
+    width:70%;
+    padding:1px;
+    box-shadow: 1px 1px 10px rgba(7, 7, 7, 0.235);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation:created ease-in .2s forwards;
+}
+
+.card .info {
+    display: flex;
+    justify-content: left;
+    width:70%;
+    height: 100%;
+}
+
+.follow-button {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+
+.card .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card p {
+    font-family: main;
+    color:white;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(14, 14, 14, 0.089);
+    cursor: pointer;
+}
+
+img {
+    width:70%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    clip-path: circle(50%);
+}
+
+@media(max-width:400px) {
+    .card {
+        width:100%;
+        padding:3px;
+    }
+}

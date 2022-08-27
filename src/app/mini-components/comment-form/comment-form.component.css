@@ -1,0 +1,16 @@
+
+textarea{
+    padding: 1px;
+    width:100%;
+    word-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: medium;
+    height:100px;
+
+    box-shadow: inset 1px 1px 3px #333;
+}
+
+textarea::placeholder {
+    color: #333;
+}

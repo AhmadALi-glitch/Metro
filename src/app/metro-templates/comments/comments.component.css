@@ -1,0 +1,25 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: solid 1px white;
+}
+
+.container>* {
+    width:100%;
+}
+
+.comments {
+    padding:20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.comment {
+    width:100%;
+}

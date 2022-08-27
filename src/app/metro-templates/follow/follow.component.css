@@ -1,0 +1,25 @@
+
+button{
+    color:white;
+    background-color: transparent;
+    border: solid white 2px;
+    outline: none;
+    font-family:main;
+    padding: 1px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.fixed {
+    color:rgba(21, 21, 21, 0.244);
+    cursor:default;
+}
+
+@media(max-width:800px) {
+    button {
+        width: 100%;
+    }
+    button span {
+        font-size:5px;
+    }
+}

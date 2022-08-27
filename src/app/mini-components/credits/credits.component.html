@@ -1,0 +1,19 @@
+
+<div class="cridets">
+
+    <div class="image">
+        <div class="upload-image" *ngIf="isEditAuth">
+            <app-upload-image (onUploadedImage)="upMessage($event)" (onUpload)="updatePath($event)"></app-upload-image>
+        </div>
+        <div class="image-box">
+            <img [src]="photoPath">
+        </div>
+    </div>
+
+    <p>{{ name }}</p>
+
+    <div class="about">
+        <p>{{ about }}</p>
+    </div>
+
+</div>

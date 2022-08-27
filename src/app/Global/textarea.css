@@ -1,0 +1,13 @@
+
+textarea::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.447);
+  outline: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+textarea::placeholder {
+  color: white;
+}

@@ -1,0 +1,38 @@
+@import "../../css-animations/animaations.css";
+
+.container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:50px;
+    background: transparent;
+}
+
+app-post {
+    display: flex;
+    justify-content: center;
+}
+
+.posts {
+    width:100%;
+    gap:100px;
+}
+
+h1{
+    width:100%;
+    font-family: main;
+    color:white;
+    text-align: center;
+}
+
+.noPosts {
+    color:white;
+}
+
+@media(min-width:600px) {
+    h1 {
+        font-size:40px;
+    }
+}

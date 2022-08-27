@@ -1,0 +1,55 @@
+
+@import "../../css-animations/animaations.css";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.card {
+    box-shadow: 1px 1px 10px rgba(7, 7, 7, 0.235);
+    width:100%;
+    gap:100px;
+    animation: created 1s ease 1;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding: 10px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(14, 14, 14, 0.089);
+}
+
+img {
+    width:70%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    clip-path: circle(50%);
+}
+
+.name {
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-shadow: 1px 1px 4px #333;
+}
+
+

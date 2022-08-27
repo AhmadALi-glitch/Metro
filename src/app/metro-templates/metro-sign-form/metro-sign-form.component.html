@@ -1,0 +1,63 @@
+
+<form [formGroup]="signForm">
+
+    <div *ngIf="!isform1Valid" class="credintals" formGroupName="cridentials">
+
+        <label for="name">E-Mail</label>
+        <input id="name" type="text"
+        #_name (keyup)="animateString(_name)"
+        formControlName="email"
+        class="reseted" 
+        >
+        
+        <label for="password">Password</label>
+        <input id="password" type="text" 
+        #_password (keyup)="animateString(_password)"
+        formControlName="password"
+        class="reseted" 
+        >
+
+
+        <div class="button-container">
+            <div *ngIf="signForm.pending" class="pending">wait..</div>
+            <button *ngIf="!signForm.pending" (click)="continue()" [disabled]='!signForm.valid'>continue</button>
+        </div>
+
+        <div (click)="toLoginMode()" class="login">Just Login</div>
+
+    </div>
+    
+    <div *ngIf="isform1Valid" class="info" formGroupName="informations">
+        
+        <div class="name">
+            <label for="name">Name</label>
+            <input formControlName="name" id="name" class="reseted"  type="text">
+        </div>
+        <div class="birth">
+            <label>birth</label>
+            <input formControlName="birth" class="reseted"  type="date">
+        </div>
+        <div class="location">
+            <label>location</label>
+            <input formControlName="location" class="reseted" type="text" />
+        </div>
+        <div class="aboutMe">
+            <label>About</label>
+            <textarea formControlName="aboutMe"></textarea>
+        </div>
+
+        <button class="go" [disabled]="sended == true" (click)="sendUserData()">Go</button>
+
+    </div>
+
+</form>
+
+<div class="errors">
+    <div class="container">
+        <h2 class="error" *ngIf="emptyName">E-Mail Is Required</h2>
+        <h2 class="error" *ngIf="emptyPassword">Password Is Required</h2>
+        <h2 class="error" *ngIf="notUniqueEmail">the email not unique</h2>
+        <h2 class="error" *ngIf="notValidEmail">not a valid email !</h2>
+        <h2 class="error" *ngIf="signForm?.errors?.['tryAgain']">try Again Please !</h2>
+    </div>
+</div>
