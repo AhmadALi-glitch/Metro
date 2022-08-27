@@ -2,7 +2,6 @@
 .area{
     background: transparent;
     width: 100%;
-    height: 4%;
 }
 
 .circles{
@@ -10,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 97%;
+    height: 100%;
     overflow: hidden;
     z-index: -1;
 }
@@ -23,7 +22,7 @@
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -150px;
+    bottom: -650px;
 }
 
 .circles li:nth-child(1){

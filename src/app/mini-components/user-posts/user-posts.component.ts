@@ -15,7 +15,7 @@ export class UserPostsComponent implements OnInit {
   @Input("update") updatePosts:boolean | undefined;
 
   posts:any=
-  [
+  [{},{},{},{},{},{},{},{},{},{},{}
   ];
 
   ngOnInit(): void {
