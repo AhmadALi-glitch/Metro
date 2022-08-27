@@ -42,6 +42,7 @@ import { CommentsComponent } from './metro-templates/comments/comments.component
 import { CommentComponent } from './mini-components/comment/comment.component';
 import { CommentFormComponent } from './mini-components/comment-form/comment-form.component';
 import { FilteredPeopleComponent } from './mini-components/filtered-people/filtered-people.component';
+import { FloatSquaresAnimationComponent } from './animation-components/float-squares-animation/float-squares-animation.component';
 
 const components = [AppComponent];
 const pipes = [];
@@ -79,6 +80,7 @@ const directives = [];
     CommentComponent,
     CommentFormComponent,
     FilteredPeopleComponent,
+    FloatSquaresAnimationComponent,
   ],
   imports: [
     AppRoutingModule,
