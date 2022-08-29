@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./people.component.css']
 })
 export class PeopleComponent {
-  switchCase = "global";
+  currentSearchType = "global";
 }

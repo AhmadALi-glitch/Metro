@@ -12,7 +12,7 @@ import { GlobalExploreService } from 'src/app/services/explore/global-explore.se
 })
 export class FilteredPeopleComponent implements OnInit {
 
-  @Input("switchCase") switchCase:string = '';
+  @Input("currentSearchType") switchCase:string = '';
 
   constructor(private route:Router, private explore:ExploreService, private following:AdvancedExploreService, private global:GlobalExploreService) { }
 

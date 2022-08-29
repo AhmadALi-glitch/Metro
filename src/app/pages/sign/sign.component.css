@@ -1,27 +1,28 @@
 
 @import "../../css-animations/animaations.css";
 
-.container{
-    font-family:main;
+.main-container{
     height:100vh;
-    
-    background-image:transparent;
-
-    position: relative;
     z-index: 2;
-    background-size: 120%;
-    animation:animated-background 9s infinite ease;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     margin:0px;
-    border-radius:10px;
+    position: relative;
     overflow: hidden;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background-image:transparent;
+    background-size: 120%;
+    border-radius:10px;
+    font-family:main;
+    animation:animated-background 9s infinite ease;
 }
 
-.form {
-    background: rgba(0, 0, 0, 0.048);    width:100%;
+.form-container {
+    width:100%;
     height:100%;
+    background: rgba(0, 0, 0, 0.048);
     backdrop-filter: blur(10px );
     -webkit-backdrop-filter: blur( 7px );
 
@@ -32,35 +33,29 @@
     flex-wrap: wrap;
 }
 
-.form .logo{
-    text-align: center;
+.form-container h1{
     width:100%;
+    font-size:30px;
+    margin-bottom:50px;
+
     font-family:main;
+    line-height: 65px;
+    text-align: center;
     color:transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color:#eee;
-    line-height: 65px;
-    margin-bottom:50px;
-    font-size:30px;
-}
-
-.login{
-    position: fixed;
-    bottom:15px;
-    text-align: center;
-    width:100%;
 }
 
 
 /*media*/
 @media (max-width:700px) {
-    .form .logo {
+    .form-container h1 {
         font-size: 24px;
     }
 }
 
 @media (max-width:300px) {
-    .form .logo {
+    .form-container h1 {
         font-size: 18px;
     }
 }
